@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#EFE8DE] flex items-center justify-center h-[100vh]">
+    <div id="calculator">
+        <input id="display" readonly>
+        <div id="keys">
+            <button onclick="appendToDisplay('+')" class="operatorBtn">+</button>
+            <button onclick="appendToDisplay('7')" class="numBtn">7</button>
+            <button onclick="appendToDisplay('8')" class="numBtn">8</button>
+            <button onclick="appendToDisplay('9')" class="numBtn">9</button>
+            <button onclick="appendToDisplay('-')" class="operatorBtn">-</button>
+            <button onclick="appendToDisplay('4')" class="numBtn">4</button>
+            <button onclick="appendToDisplay('5')" class="numBtn">5</button>
+            <button onclick="appendToDisplay('6')" class="numBtn">6</button>
+            <button onclick="appendToDisplay('*')" class="operatorBtn">*</button>
+            <button onclick="appendToDisplay('1')" class="numBtn">1</button>
+            <button onclick="appendToDisplay('2')" class="numBtn">2</button>
+            <button onclick="appendToDisplay('3')" class="numBtn">3</button>
+            <button onclick="appendToDisplay('/')" class="operatorBtn">/</button>
+            <button onclick="appendToDisplay('0')" class="numBtn">0</button>
+            <button onclick="appendToDisplay('.')" class="numBtn">.</button>
+            <button onclick="calculate()" class="numBtn">=</button>
+            <button onclick="clearDisplay()" class="operatorBtn">C</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

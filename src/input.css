@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#calculator {
+    @apply font-poppins bg-[#F7F8FB] rounded-3xl max-w-[328px] overflow-hidden drop-shadow-2xl
+}
+
+#display {
+    @apply w-[100%] p-[20px] text-[40px] text-right border-none bg-[#F7F8FB] text-[#505050]
+}
+
+#keys {
+    @apply grid grid-cols-4 gap-[10px] p-[25px]
+}
+
+button {
+    @apply w-[62px] h-[60px] rounded-full text-[32px] cursor-pointer
+}
+
+Button, .operatorBtn {
+    @apply bg-[#FF9500] text-[#FBFBFD]
+}
+
+Button, .numBtn {
+    @apply bg-[#505050] text-[#D4D4D2]
+}
+
